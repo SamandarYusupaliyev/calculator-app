@@ -1,0 +1,448 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root[ data-theme="light"]{
+
+}
+:root[data-theme="dark"]{
+
+}
+:root[ data-theme="vintage"]{
+
+}
+
+/* league-spartan-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/league-spartan-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+/* league-spartan-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'League Spartan';
+    font-style: normal;
+   font-weight: 700;
+    src: url('../fonts/league-spartan-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  } 
+
+/* GlOBAL */
+.lola{
+ font-family: League Spartan ,Arial, Helvetica,  sans-serif; 
+}
+
+.container{
+width:1440px;
+height: 900px; 
+justify-content: center;
+align-items: center;
+margin-left: auto;
+margin-right: auto; 
+padding-top: 96px;
+padding-bottom: 96px;
+padding-left: 450px;
+padding-right: 450px;
+background: #3A4663;
+}
+
+/*header___calculator */
+.header___calculator{
+width: 545px;
+height: 710px;
+flex-shrink: 0;
+border: 1px solid darkblue;
+}
+
+.box{
+display: inline-flex;
+width: 540px;
+height: 44px;
+justify-content: center;
+align-items: flex-end;
+gap: 342px;
+flex-shrink: 0;
+margin-bottom: 32px;
+}
+
+.logo a{
+color: #FFF;
+text-align: center;
+font-size: 32px;
+font-weight: 700;
+letter-spacing: -0.533px;
+text-decoration: none;
+}
+
+.logo a :hover{
+cursor: pointer;
+transition-duration: 2s;
+}
+
+.box__1{
+width: 139px;
+height: 44px;
+display: flex;
+gap: 13px;
+}
+
+.theme__title{
+color: #FFF;
+text-align: center;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 1px;
+padding-top: 26px;
+}
+
+.box__2{
+width: 71px;
+height: 44px;
+flex-shrink: 0;
+}
+
+.button{
+width: 71px;
+height: 26px;
+flex-shrink: 0;
+border-radius: 13px;
+background: #242D44;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 8px;
+}
+
+.box__3{
+display: flex;
+gap: 11px;
+padding-left: 8px;
+}
+
+.box__3 div{
+color: #FFF;
+text-align: center;
+font-size: 15px;
+font-weight: 700;
+width: 12px;
+margin-bottom: 5px;
+}
+/* calculator__input */
+.calculator__input{
+width: 540px;
+height: 128px;
+flex-shrink: 0;
+padding-left: 323px;
+padding-top: 40px;
+padding-right: 32px;
+padding-bottom: 36px;
+color: #FFF;
+text-align: right;
+font-size: 56px;
+font-weight: 700;
+letter-spacing: -0.933px;
+border-radius: 10px;
+background: #181F33;
+margin-bottom: 24px;
+border: 1px solid #181F33;
+} 
+/* foooter__calculator */
+.footer___calculator{
+width: 540px;
+height: 480px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #242D44
+}
+
+/* calculator__keyboard */
+.calculator__keyboard {
+display: grid;
+padding: 24px;
+gap: 13px;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(5,64px);
+grid-template-rows: 
+"7 8 8 del"
+"4 5 6 add"
+"1 2 3 subtract"
+"decimal 0 divide multiply"
+"reset reset equal equal";
+}
+
+/* Keylar */
+.key {
+border:0;
+}
+.key--7 {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+padding-top: 13px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+}
+.key--8 {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+padding-top: 13px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+}
+.key--9 {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+padding-top: 13px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+}
+.key--Del {
+border-radius: 10px;
+background: #647198;
+box-shadow: 0px -4px 0px 0px #414E73 inset;
+color: #FFF;
+text-align: center;
+font-size: 28px;
+font-weight: 700;
+letter-spacing: -0.467px;
+border: none;
+padding-top: 13px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px
+}
+.key--4 {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+padding-top: 13px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+}
+.key--5 {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+padding-top: 13px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+}
+.key--6 {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+padding-top: 13px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+}
+.key--add {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+padding-top: 13px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+}
+.key--1 {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+padding-top: 10px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+}
+.key--2 {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+padding-top: 10px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+}
+.key--3 {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+padding-top: 10px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+}
+.key--subtract {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+padding-top: 8px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+}
+.key--decimal {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+padding-top: 13px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+}
+.key--0 {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+padding-top: 13px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+}
+.key--slesh{
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+padding-top: 13px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+}
+.key--multiply {
+border-radius: 10px;
+background: #EAE3DC;
+box-shadow: 0px -4px 0px 0px #B3A497 inset;
+border: none;
+color: #434A59;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: -0.667px;
+padding-top: 10px;
+padding-left: 14px;
+padding-bottom: 11px;
+padding-right: 13px;
+}
+.key--Reset {
+flex-shrink: 0;
+border-radius: 10px;
+background: #647198;
+box-shadow: 0px -4px 0px 0px #414E73 inset;
+color: #FFF;
+text-align: center;
+font-size: 28px;
+font-weight: 700;
+letter-spacing: -0.467px;
+border:none;
+}
+.key--equal {
+border-radius: 10px;
+background: #D03F2F;
+box-shadow: 0px -4px 0px 0px #93261A inset;
+text-align: center;
+font-size: 28px;
+font-weight: 700;
+letter-spacing: -0.467px;
+border:none;
+color: #FFF;
+text-align: center;
+font-size: 28px;
+font-weight: 700;
+letter-spacing: -0.467px;
+}
