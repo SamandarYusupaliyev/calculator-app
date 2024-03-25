@@ -28,7 +28,12 @@ box-sizing: border-box;
     font-style: normal;
    font-weight: 700;
     src: url('../fonts/league-spartan-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  } 
+} 
+
+body{
+  background: #3A4663;
+}
+
 
 /* GlOBAL */
 .lola{
@@ -36,17 +41,10 @@ box-sizing: border-box;
 }
 
 .container{
-width:1440px;
-height: 900px; 
+margin-top:10px;
+display:flex;
 justify-content: center;
 align-items: center;
-margin-left: auto;
-margin-right: auto; 
-padding-top: 96px;
-padding-bottom: 96px;
-padding-left: 450px;
-padding-right: 450px;
-background: #3A4663;
 }
 
 /*header___calculator */
@@ -139,6 +137,7 @@ padding-right: 32px;
 padding-bottom: 36px;
 color: #FFF;
 text-align: right;
+border:none;
 font-size: 56px;
 font-weight: 700;
 letter-spacing: -0.933px;
